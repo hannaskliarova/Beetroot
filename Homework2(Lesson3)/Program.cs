@@ -45,10 +45,33 @@ namespace Homework2
             result = Math.Max(x, y);
             Console.WriteLine(result);*/
 
+
+
+            //Extra
+            int daysPassed, daysLeft;
+            Console.BackgroundColor = ConsoleColor.Magenta;
+
+            Console.Write("How many days left to New Year? ");
+            daysLeft = Convert.ToInt32(Console.ReadLine());
+            Console.Write("How many days passed from New Year? ");
+            daysPassed = Convert.ToInt32(Console.ReadLine());
            
+            Console.WriteLine(daysLeft + " days left to New Year.");
+            Console.WriteLine(daysPassed + " days passed from New Year.");
+
+            
+            
+            
+            
+            
+            
+            
+          
 
 
-        
+
+
+
 
 
 
