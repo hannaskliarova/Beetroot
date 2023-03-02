@@ -48,19 +48,29 @@ namespace Homework2
 
 
             //Extra
-            int daysPassed, daysLeft;
-            Console.BackgroundColor = ConsoleColor.Magenta;
+            /*int daysPassed, daysLeft;
+           Console.BackgroundColor = ConsoleColor.Magenta;
 
-            Console.Write("How many days left to New Year? ");
-            daysLeft = Convert.ToInt32(Console.ReadLine());
-            Console.Write("How many days passed from New Year? ");
-            daysPassed = Convert.ToInt32(Console.ReadLine());
-           
-            Console.WriteLine(daysLeft + " days left to New Year.");
-            Console.WriteLine(daysPassed + " days passed from New Year.");
+           Console.Write("How many days left to New Year? ");
+           daysLeft = Convert.ToInt32(Console.ReadLine());
+           Console.Write("How many days passed from New Year? ");
+           daysPassed = Convert.ToInt32(Console.ReadLine());
 
-            
-            
+           Console.WriteLine(daysLeft + " days left to New Year.");
+           Console.WriteLine(daysPassed + " days passed from New Year.");*/
+
+
+            //Extra (2nd attempt)
+
+            DateTime currentDate, passedYear, upcomingYear;
+            currentDate = new DateTime(2023, 03, 03, 8, 0, 15);
+            passedYear = new DateTime(2022, 12, 31, 8, 0, 15);
+            upcomingYear = new DateTime(2023, 12, 31, 8, 0, 15);
+            TimeSpan difference1 = currentDate - passedYear;
+            TimeSpan difference2 = upcomingYear - currentDate;
+            Console.WriteLine(difference1.Days + " days passed from New Year.");
+            Console.WriteLine(difference2.Days + " days left to New Year.");
+
             
             
             
