@@ -24,7 +24,7 @@ namespace Homework3
             }
             
             else if (parameterY == parameterX)
-            // но я не вижу смысла прописывать это условие, потому что при x == y, sum всегда будет x||y?
+            // но я не вижу смысла прописывать это условие, потому что при x == y, sum всегда будет x&&y?
             {
                 Console.WriteLine("The parameters are equal");
             }
