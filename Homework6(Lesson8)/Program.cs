@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.InteropServices;
+
 namespace Homework6_Lesson8_
 {
     internal class Program
@@ -24,17 +26,19 @@ namespace Homework6_Lesson8_
             Console.WriteLine(CompareTwoArrays);
         }*/
 
-        
-        //P.2 (attempt 1)
 
 
-        /*static int Analyze (string stringAnalysis)
+        //P.2 (Attempt 2)
+
+
+        /*static void Analyze(string stringAnalysis, out int alphabet, out int digit, out int specialchar)
         {
             
-            int alphabet, digit, specialchar, i, l;
+            Console.Write("Enter the string : ");
+            stringAnalysis = Console.ReadLine();
+            int i, l;
             alphabet = digit = specialchar = i = 0;
             l = stringAnalysis.Length;
-            
 
             while (i < l)
             {
@@ -50,39 +54,16 @@ namespace Homework6_Lesson8_
                 {
                     specialchar++;
                 }
-
                 i++;
             }
-            return (alphabet, digit, specialchar).digit ;
             
         }*/
 
-        //P.2 (Attempt 2)
 
 
-        /*static string SortedString (string EnteredString)
-         {
-             string temp;
-             char[] charString = EnteredString.ToCharArray();
-             for (int i = 1; i < charString.Length; i++)
-             {
-                 for (int j = 0; j < charString.Length - 1; j++)
-                 {
-                     if (charString[j] > charString[j + 1])
-                     {
-                         temp = charString[j];
-                         charString[j] = charString[j + 1];
-                         charString[j + 1] = temp;
-                     }
-                 }
-             }
-             return charString;  
-         }*/
-
-        
         //P.3 Sort that will return string that contains all characters from input string sorted in alphabetical order (e.g. 'Hello' -> 'ehllo')
-        
-        
+
+
         /*static string SortedString (string enteredString)
         {
             
@@ -92,11 +73,30 @@ namespace Homework6_Lesson8_
             
         }*/
 
-        //P.4
+        //P.4  Duplicate that will return array of characters that are duplicated in input string (e.g. 'Hello and hi' -> ['h', 'l'])
+
+        static List <char> ListOfDuplicates (string enteredString)
+        {
+            List <char> duplicates = new List <char> ();
+            List <char> seen = new List <char> ();
+
+            foreach (char c in enteredString)
+            {
+                if (seen.Contains(c) && !duplicates.Contains(c))
+                {        
+                    duplicates.Add (c);
+                }
+                else
+                {
+                    seen.Add (c);
+                }
+            }
+            return duplicates;
+        }
 
 
-        
-            static void Main(string[] args)
+
+        static void Main(string[] args)
         {
 
             //P.1 Compare that will return true if 2 strings are equal, otherwise false, but do not use build-in method
@@ -121,40 +121,6 @@ namespace Homework6_Lesson8_
 
              Console.WriteLine(result);*/
 
-            //P.2
-
-            /*string str;
-            int alphabet, digit, specialchar, i, l;
-            alphabet = digit = specialchar = i = 0;
-
-            Console.Write("Enter the string : ");
-            str = Console.ReadLine();
-            l = str.Length;
-
-            while (i < l)
-            {
-                if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
-                {
-                    alphabet++;
-                }
-                else if (str[i] >= '0' && str[i] <= '9')
-                {
-                    digit++;
-                }
-                else
-                {
-                    specialchar++;
-                }
-
-                i++;
-            }
-
-
-            Console.Write("Number of Alphabets in the string is : {0}\n", alphabet); 
-            Console.Write("Number of Digits in the string is : {0}\n", digit);
-            Console.Write("Number of Special characters in the string is : {0}\n\n", specialchar);
-
-            Console.ReadLine();*/
 
             //P.3
 
@@ -166,8 +132,9 @@ namespace Homework6_Lesson8_
             string sortedNew = SortedString(enteredString);
             Console.WriteLine(sortedNew);*/
 
-            //P.4
+            
 
+           
 
         }
 
