@@ -1,5 +1,4 @@
-{
-  "exclude": [
+[
     {
       "FirstName": "Hanna",
       "LastName": "Skliarova",
@@ -26,4 +25,3 @@
       "Age": 30
     }
   ]
-}
