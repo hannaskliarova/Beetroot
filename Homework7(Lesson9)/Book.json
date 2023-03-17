@@ -1,27 +1,22 @@
 [
     {
       "FirstName": "Hanna",
-      "LastName": "Skliarova",
-      "Age": 24
+      "LastName": "Skliarova"
     },
     {
       "FirstName": "Melanie",
-      "LastName": "Wilson",
-      "Age": 25
+      "LastName": "Wilson"
     },
     {
       "FirstName": "Gregory",
-      "LastName": "Davidson",
-      "Age": 26
+      "LastName": "Davidson"
     },
     {
       "FirstName": "Donald",
-      "LastName": "Rochester",
-      "Age": 25
+      "LastName": "Rochester"
     },
     {
       "FirstName": "Din",
-      "LastName": "Thompson",
-      "Age": 30
+      "LastName": "Thompson"
     }
   ]
