@@ -1,0 +1,29 @@
+{
+  "exclude": [
+    {
+      "FirstName": "Hanna",
+      "LastName": "Skliarova",
+      "Age": 24
+    },
+    {
+      "FirstName": "Melanie",
+      "LastName": "Wilson",
+      "Age": 25
+    },
+    {
+      "FirstName": "Gregory",
+      "LastName": "Davidson",
+      "Age": 26
+    },
+    {
+      "FirstName": "Donald",
+      "LastName": "Rochester",
+      "Age": 25
+    },
+    {
+      "FirstName": "Din",
+      "LastName": "Thompson",
+      "Age": 30
+    }
+  ]
+}
