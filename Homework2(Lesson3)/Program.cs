@@ -12,15 +12,23 @@ namespace Homework2
         static void Main(string[] args)
         {
             //P.1
-            /*double x, result1, result2, result3, result4, result; 
+            double x, result1, result2, result3, result4, result; 
             Console.Write("Enter the x parameter: ");
-            x = Convert.ToDouble(Console.ReadLine());
-            result1 = Math.Pow(x, (double) 3 / 1); 
-            result2 = result1 * -6;
-            result3 = Math.Pow(x, (double) 2 / 1) * 5;
-            result4 = x * 10;
-            result = result2 + result3 - result4 + 15;
-            Console.WriteLine(result);*/
+            try
+            {
+                x = Convert.ToDouble(Console.ReadLine());
+                result1 = Math.Pow(x, (double)3 / 1);
+                result2 = result1 * -6;
+                result3 = Math.Pow(x, (double)2 / 1) * 5;
+                result4 = x * 10;
+                result = result2 + result3 - result4 + 15;
+                Console.WriteLine(result);
+            }
+            catch 
+            {
+                Console.WriteLine("The X parameter you entered is invalid");
+            }
+            
 
 
             //P.2
@@ -62,14 +70,14 @@ namespace Homework2
 
             //Extra (2nd attempt)
 
-            DateTime currentDate, passedYear, upcomingYear;
+            /*DateTime currentDate, passedYear, upcomingYear;
             currentDate = new DateTime(2023, 03, 03, 8, 0, 15);
             passedYear = new DateTime(2022, 12, 31, 8, 0, 15);
             upcomingYear = new DateTime(2023, 12, 31, 8, 0, 15);
             TimeSpan difference1 = currentDate - passedYear;
             TimeSpan difference2 = upcomingYear - currentDate;
             Console.WriteLine(difference1.Days + " days passed from New Year.");
-            Console.WriteLine(difference2.Days + " days left to New Year.");
+            Console.WriteLine(difference2.Days + " days left to New Year.");*/
 
             
             
