@@ -111,7 +111,7 @@ namespace TestHomework
 
             public int Count
             {
-                get { return elements.Count; }
+                get { return elements.Length; }
             }
 
 
